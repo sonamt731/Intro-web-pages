@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        
+        <title>Keep in Touch</title>
+        
+        <style>
+            .error {
+                color: red;
+            }
+            .square {
+            width:100px;
+            height:100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            margin-bottom: 10px;
+            position: scroll;
+        }
+        
+        .square2 {
+            width:100px;
+            height:100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            margin-bottom: 10px;
+            position: scroll;
+        }
+        
+         .square3 {
+            width:100px;
+            height:100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            margin-bottom: 10px;
+             position: scroll;
+        }
+        
+         .square4 {
+            width:100px;
+            height:100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            margin-bottom: 10px;
+             position: scroll;
+        }
+
+            @keyframes example {
+            0% {background-color: #D168B8;}
+            50% {background-color: darkgoldenrod;
+                width:800px;}
+            100% {background-color: #FE68DB;
+                width:200px;}    
+        }
+        
+        	@keyframes two {
+            100% {background-color: #D168B8;}
+            50% {background-color: #F280D7;
+                width:800px;}
+            0% {background-color: #D168B8;}
+        </style>
+</head>
+<body>
+    
+    <!-- Add jQuery -->
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Fashion</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="summer.html">Spring & Summer</a></li>
+            <li><a href="winter.html">Fall & Winter</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+        
+        <div class="container">
+
+      <div class="page-header">
+        <h1>Keep in Contact</h1>
+        <p class="lead">Are you intersted in fashion? Sign up for our email listing to recieve biweekly emails of the latest trends. Seasons change and your style can't fall behind! We can help!</p>
+      </div>
+
+            <form name="contact" method="POST" action="http://formspree.io/srt346@nyu.edu">
+            <div class="input-group">
+            <label for="yourname">Your Name</label><br/>
+            <input type="name" name="yourname" id="yourname"  placeholder="Full Name">
+            </div>
+            <br/>    
+            <div class="input-group">
+            <label for="email">Email</label><br/>
+            <input type="email" name="email" id="email" placeholder="Let us send you trends!">
+            </div>
+            <br/>   
+            <div class="input-group">  
+            <label for="yourmessage">Say Hello!</label><br/>
+            <textarea name="yourmessage" id="yourmessage" placeholder="Comments, suggestions or questions?"></textarea>
+                </div>
+            <button type="submit">Send</button>
+            </form>
+
+        <p style = "margin-top: 15px">This form is powered by <a href="https://formspree.io/">Formspree</a> and validated by the <a href="https://jqueryvalidation.org/">jQuery Validation Plugin</a>.</p>
+        </div>
+    
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+            $("#box1").fadeIn(3000);
+            $("#box2").fadeIn(3000);
+            $("#box3").fadeIn(3000);
+            });
+        });
+          </script>
+        
+        <div class="container">
+            <h1 style="font-size: 25px">Get to know the Site Creater: Sonam Tailor</h1>
+            
+            <p>Sonam is a sophmore at NYU studying Computer Science with a minor in Math and Web Design. She is an absolute fashion enthusiast!</p>
+            <p><a href="mailto:srt346@nyu.edu">Contact Sonam Tailor</a></p>
+            
+            <a href="https://www.instagram.com/sonamt731/?hl=en"><img src="../assignment8/pics/ig.png" alt="Sonam's IG" width="100" height="100"></a>
+            <p>Check out her instagram!</p>
+            <button>Click for Summer Colors --> Winter!</button><br><br>
+            <div id="box1" style="width:80px;height:80px;display:none;background-color:darkmagenta;"></div><br>
+            <div id="box2" style="width:80px;height:80px;display:none;background-color: indianred;"></div><br>
+            <div id="box3" style="width:80px;height:80px;display:none;background-color: cadetblue;"></div>
+        
+        </div>
+    <div class="container">
+    <div class = "square" style = "margin-top: 15px"></div>
+    <div class = "square2"></div>
+    <div class = "square3"></div>
+    <div class = "square4"></div>
+    </div>
+        <!-- Include jQuery Validation Plugin-->
+        
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript for Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="formvalidate.js"></script>
+        
+
+        </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Seasonal Fashion | Fall & Winter</title>
+    <link rel="icon" type="image/png" href="images/earth.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+    #panel, #flip {
+        padding: 15px;
+        text-align: center;
+        background-color: hotpink;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+        padding: 50px;
+        display: none;
+        background-color: palevioletred
+    } 
+      </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Fashion</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse in" aria expanded="true" style>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="summer.html">Spring & Summer</a></li>
+            <li class="active"><a href="winter.html">Fall & Winter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Fall & Winter </h1>
+        <p class="lead">Bundled, Fur &  Cozy </p>
+      </div>
+    
+    <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-7"><img src="pics/winter2.jpg" alt="Spring" class="img-responsive"></div>
+        <div class=" col-sm-6 col-md-4 col-lg-5"><p>You've booked your ski trip—a cabin, good friends, and some hot chocolate...winter bliss. Now, it's time to get down to business: what to pack. Before you even hit the slopes, you'll want to suit up properly in warm and waterproof gear. Not sure where to find such things? We've got you. Here's a narrowed-down packing list including only the most important items, from a high-tech jacket to ultra-cozy gloves, and where to buy them. (There's even a Fendi ski helmet in here, if you want to be fancy.) Once you're done shopping, reward yourself with an Après cocktail. <p>
+        <p><a class="btn btn-default" chref="https://www.marieclaire.com/fashion/advice/g2094/ski-chic-outfits/" role="button">Learn More Winter Trends »</a></p></div>
+      </div>
+      
+        <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-7"><img src="pics/priyanka.jpg" alt="Priyanka" class="img-responsive"></div>
+        <div class=" col-sm-6 col-md-4 col-lg-5"><p>If you’ve seen any of the following in Zara or Topshop – shaggy faux-fur coats, pussybow blouses or floral dresses that look like 1970s upholstery – then you’ve already spotted the beginnings of the Guccification of the high street. This is all thanks to the brand’s new creative director, Alessandro Michele, who has transformed Gucci from a purveyor of bling-tastic yacht chic to a haven for glamorous geeks, and has won the hearts of the fashion industry in the process. High-street homages are everywhere; spectacles and a bobble hat are the finishing touches. <p>
+        <p><a class="btn btn-default" href="https://www.theguardian.com/fashion/2015/sep/01/20-autumn-fashion-trends-need-to-know" role="button">Learn More Fall Trends »</a></p></div>
+      </div>
+        
+        <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-7"><img src="pics/winter.jpg" alt="Work" class="img-responsive"></div>
+        <div class=" col-sm-6 col-md-4 col-lg-5"><p>When we consider a "heat wave" anything above 30 degrees, getting dressed for work seems like is a completely daunting task. Wearing the same turtleneck and jeans five times over becomes the new office uniform, and before we know it layering feels like a second job. Don't let your wardrobe suffer with the weather—get inspired with these seven chic options. Thankfully many jobs actually let you sport the more casual look! <p>
+        <p><a class="btn btn-default" href="https://www.marieclaire.com/fashion/g15063520/winter-work-outfits-for-women/" role="button">Stylish Work Looks »</a></p></div>
+      </div>
+    </div>
+      
+    <div class = "container">
+      <div class="page-header">
+        <h1 style = "text-align: center">Fall & Winter </h1>
+        <p class="lead" style = "text-align: center">Bundled, Fur &  Cozy </p>
+      </div>
+        
+         <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script> 
+        $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+        });
+    });
+    </script>
+    
+    <div id = "flip">Click to Slide the Panel down or up and View More Fall/Winter Trends</div>
+    <div id="panel"><img src = "pics/falltr.jpg" class="img-responsive"></div>
+    </div>
+      
+    <script src="js/bootstrap.min.js"></script>
+      
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Seasonal Fashion</p>
+      </div>
+    </footer>
+  </body>
+</html>

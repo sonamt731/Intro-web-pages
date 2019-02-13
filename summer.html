@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seasonal Fashion | Spring & Summer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  <style>
+    #panel, #flip {
+        padding: 15px;
+        text-align: center;
+        background-color: hotpink;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+        padding: 50px;
+        display: none;
+        background-color: palevioletred
+    } 
+      </style>
+
+  </head>
+
+ 
+  <body>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+      
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Fashion</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse in" aria expanded="true" style>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="summer.html">Spring & Summer</a></li>
+            <li><a href="winter.html">Fall & Winter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Spring & Summer </h1>
+        
+        <p class="lead">Floral, Flowy, & Free</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-7"><img src="pics/springsummer.jpg" alt="Spring" class="img-responsive"></div>
+        <div class=" col-sm-6 col-md-4 col-lg-5"><p>What to wear this summer? It's a recurrent question that gives no rest to stylish people and fashion freaks. Unlike previous year when women’s wardrobe was full of elegant feminine and flattering contours outfits, this year women’s outfits are proceeding towards honest and simple approach to dressing. 
+
+If you have not updated your wardrobe yet, its perfect time to start putting away the heavy, drab winter clothes and dress up yourself in light and bright colors. So what are you thinking for? This summer comes with colors like white, grey, navy blue; browns are reassured and warm with violet tones. <p>
+        <p><a class="btn btn-default" href="https://www.fibre2fashion.com/industry-article/2290/summer-fashion-trends-for-todays-women" role="button">Learn More Summer Trends »</a></p></div>
+      </div>
+    
+    <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-7"><img src="pics/springsum2.jpg" alt="Spring" class="img-responsive"></div>
+        <div class=" col-sm-6 col-md-4 col-lg-5"><p>If we were handing out Summer superlatives, there would be some fierce competition for best street style. This season brought with it the return of biker shorts, the reimagining of the ubiquitous '90s dad sneaker, high-waisted pants, metallics by day, and, as always, breezy sundresses in every color and all of our favorite prints</p>
+        <p><a class="btn btn-default" href="https://www.popsugar.com/fashion/Best-Summer-Style-2018-45130234" role="button">PopSugar Article »</a></p></div>
+      </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-7"><img src="pics/aish.jpg" alt="Aishwarya" class="img-responsive"></div>
+        <div class=" col-sm-6 col-md-4 col-lg-5"><p>Spring Dresses. Check out Aishwarya Rai on the red carpet sporting a flowy dress! If you invest in one dress style next season, make sure it has ruching - a romantic take on body-con, and much more forgiving. Carefully-positioned ruching has mighty figure-enhancing potential; it adds curves to slimmer frames and those with curvier silhouettes will appreciate its ability to stretch in the right places. Givenchy balanced ruched detailing with accordion pleating to create a dress that will be at the top of many wishlists next season, while Calvin Klein used it to cinch it in the waist.</p>
+        <p><a class="btn btn-default" href="https://www.harpersbazaar.com/uk/fashion/shows-trends/g38445/spring-summer-fashion-trends/?slide=16" role="button">Bazaar Article »</a></p></div>
+    </div>
+        
+    <div class="page-header">
+        <h1 style = "text-align: center">Spring & Summer </h1>
+        <p style = "text-align: center">Floral, Flowy, & Free</p>
+      </div>
+    
+    <script> 
+        $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+    </script>
+        
+    <div id = "flip">Click to Slide the Panel down or up and View More Spring & Summer Trends</div>
+    <div id="panel"><img src = "pics/summertr.jpg" class="img-responsive"></div>
+    </div>
+      
+
+    <script src="js/bootstrap.min.js"></script>
+      
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Seasonal Fashion</p>
+      </div>
+    </footer>
+
+</body>
+</html>
+
